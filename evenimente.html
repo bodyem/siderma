@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html> 
+<head>
+<title>Evenimente</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script src="js/jquery-1.4.2.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('.item').hover(function(){
+		$(this).toggleClass('item item_hover');
+	});
+
+});
+
+</script>
+<script src="js/jquery.innerfade.js"></script>
+<script src="js/fading_effect.js"></script>
+</head>
+<body>
+<div class="wrapper">
+
+	<div class="header">
+	
+		<div class="logo">
+			<img src="components/logo_transparent.png" width="270"/>
+		</div>
+		
+		<div class="searchbar">
+			<input type="text"/>
+			<div class="contact_web">
+				<div id="facebook"><img src="components/facebook.png"/> </div>
+				<div id="e-mail"><img src="components/email.png"/></div>
+				<div id="skype"><img src="components/skype.png"/></div>
+			</div>
+		</div>
+		
+		<div class="menu_top">
+			
+			
+			<div class="item_hover">
+				<a href="#">Companie</a>
+			</div>
+			<div class="item">
+				<a href="produse.php">Produse</a>
+			</div>
+			<div class="item">
+				<a href="certificari.html">Certificari</a>
+			</div>
+			<div class="item">
+				<a href="#">Cariere</a>
+			</div>
+			<div class="item">
+				<a href="contact.html">Contact</a>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	
+	<div class="container">
+		<div class = "content" align="center" style="vertical-align:middle;">
+		
+		<div class="product_menu">
+				<div class="component">
+					<div class="label base" id="item1">
+						<a href="despre_noi.html"> Despre Noi </a>
+					</div>
+					<span class="arrow-right">&#9654;</span>
+				</div>
+				<div class="component">
+					<div class="label normal" id="item2">
+						<a href="evenimente.html"> Evenimente </a>
+					</div>
+					<span class="arrow-right">&#9654;</span>
+				</div>
+				<div class="component">
+					<div class="label normal" id="item3">
+						<a href="#"> Servicii </a>
+					</div>
+					<span class="arrow-right">&#9654;</span>
+				</div>
+				
+		
+			</div>
+		
+		<div class="content_container_ev">
+			<div class="fading_bg"></div>
+			<div id="wrapp_fading">
+					<ul id="fading_images" type="none" class="fading_css" ext="images/companie" align="center" >
+				
+					<li>
+						<a href="#">
+							<img  src="images/evenimente/pic1.jpg" alt="Good Guy bad Guy" />
+							<div class="ev_band" id="1" style="position:absolute;top:86%;left:10px;">
+								Bologna-Linea Pelle, aprilie 2012
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img  src="images/evenimente/pic2.jpg" alt="Whizzkids" />
+							<div class="ev_band" id="2" style="position:absolute;top:86%;left:10px;">
+							Bologna-Linea Pelle, martie 2010
+							</div>
+						</a>
+					</li> 
+					<li>
+						<a href="#">
+							<img  src="images/evenimente/pic3.jpg" alt="Königin Mutter" />
+							<div class="ev_band" id="3" style="position:absolute;top:86%;left:10px;">
+							Bologna-Linea Pelle, octombrie 2009
+							</div>
+						</a>
+					</li> 
+					<li>
+						<a href="#">
+							<img  src="images/evenimente/pic4.jpg" alt="RT Hybride Archivierung" />
+							<div class="ev_band" id="4" style="position:absolute;top:86%;left:10px;">
+			Dusseldorf-GDS, martie 2011
+			</div>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img  src="images/evenimente/pic5.jpg" alt="Königin Mutter" />
+							<div class="ev_band" id="5" style="position:absolute;top:86%;left:10px;">
+			Geneva-Index, aprilie 2011
+			</div>
+						</a>
+					</li> 
+					<li>
+						<a href="#">
+							<img  src="images/evenimente/pic6.jpg" alt="RT Hybride Archivierung" />
+							<div class="ev_band" id="6" style="position:absolute;top:86%;left:10px;">
+			Moscova, Textillegprom Consumexpo, februarie 2012
+			</div>
+						</a>
+					</li>
+					</ul>
+					
+				</div>
+
+			
+			
+			
+			
+			
+			</div>
+		</div>
+		
+		</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="footer">
+		<div class="links" align="center">
+			<a href="#">Home</a>
+			<span>|</span>
+			<a href="#">Servicii</a>
+			<span>|</span>
+			<a href="#">Cariere</a>
+			<span>|</span>
+			<a href="#">Certificari</a>
+			<span>|</span>
+			<a href="#">Contact</a>
+		</div>
+		<div class="certificari">
+			<img src="components/ISO14001.png" height="50">
+			<img src="components/ISO18001.png" height="50">
+			<img src="components/ISO9001.png" height="50">
+		</div>
+	
+	</div>
+
+
+
+
+
+
+</div>
+	
+
+
+</body>
+</html>

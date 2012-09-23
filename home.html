@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Siderma</title>
+		<meta charset=utf-8>
+        <meta name="description" content="Siderma" />
+        <meta name="keywords" content="Siderma"/>
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=latin,latin-ext,cyrillic' rel='stylesheet' type='text/css'><!--fonturi cu diacritice k@$-->
+		<script src="js/jquery-1.4.2.min.js"></script>
+		  <style>
+
+#new div {
+
+   background-color: #abc;
+
+   width: 40px;
+
+   height: 40px;
+
+   margin: 5px;
+   
+
+}
+
+.block_under{
+
+   background-color: #abc;
+
+   width: 40px;
+
+   height: 40px;
+
+   margin: 0px;
+
+z-index:-1;
+
+visibility:hidden;
+
+}
+
+</style>
+<script>
+
+function set(x){
+
+$parent = $(x).parent();
+
+
+
+$parent[0].setAttribute('status','closed');
+
+
+
+
+
+}
+
+
+
+</script>
+
+    </head>
+    <body>
+	<img class="bgintro" src="images/intro_site.jpg">
+	<img class="siglaintro" src="images/logo_mai_mic.png">
+	<div class="navig_flag">
+	<table cellspacing="8" cellpadding="12">
+	<tr><td><img src="images/ro_flag.jpg">
+	</td><td width="190"><p style="margin-left:10px;"><a href="despre_noi.html">Intră pe site</a></p></td></tr>
+	<tr><td><img src="images/en_flag.gif"></td>
+	<td width="190"><p style="margin-left:10px;"><a href="#">Enter site</a></p></td></tr>
+	<tr><td><img src="images/it_flag.jpg"></td>
+	<td width="190"><p style="margin-left:10px;"><a href="#">Entra nel sito</a></p></td></tr>
+	<tr><td><img src="images/ru_flag.jpg"></td>
+	<td width="190"><p style="margin-left:10px;"><a href="#">Войти на сайт</a></p></td></tr></table>
+	
+
+
+	</div>
+    </body>
+</html>

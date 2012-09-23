@@ -1,0 +1,15 @@
+	$(document).ready(
+		function(){
+			
+
+			$('#fading_images').innerfade({
+				speed: 'slow',
+				timeout: 4000,
+				type: 'sequence',
+				containerheight : '60%',
+				runningclas : 'fadding_css'
+			});
+			
+			
+		}
+	);
