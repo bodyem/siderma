@@ -1,13 +1,18 @@
 <!DOCTYPE >
-<html >
-    <head>
-        <title></title>
+
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <link rel="stylesheet" href="css/produseform.css" type="text/css" />
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
         <script type="text/javascript" src="sliding.form.js"></script>
         
-    </head>
+             <script>
+    $(document).ready(function(){
+    	var dimensiune = $('#content').width();
+    	//console.log(dimensiune);
+    	$('.step').width(dimensiune);
+    })
+    
+    </script>
     <style>
         span.reference{
             position:fixed;
@@ -29,9 +34,9 @@
             padding:20px;
         }
     </style>
-    <body>
-        <div id="contentt">
-            <div id="wrapperr">
+   
+        <div id="content">
+            <div id="wrapper">
              <h1>Acoperiş Branţ - Netermoformabil</h1>
             <div id="navigation" style="display:none;">
                     <ul>
@@ -113,5 +118,3 @@
                 </div>
             </div>
         </div>
-    </body>
-</html>
