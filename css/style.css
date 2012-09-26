@@ -480,7 +480,7 @@ z-index:10000;
  margin-right: auto;
  width: 70%;
  height: 90%;
- overflow: hidden;
+ overflow: auto;
 }
 
 .product_menu{
