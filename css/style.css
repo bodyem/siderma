@@ -484,7 +484,7 @@ z-index:10000;
  margin-right: auto;
  width: 70%;
  height: 85%;
- overflow: hidden;
+ overflow: auto;
 }
 
 .product_menu{
