@@ -59,7 +59,7 @@ $(function() {
         $('#steps').stop().animate({
             marginLeft: '-' + widths[current-1] + 'px'
         },500,function(){
-        		//console.log(widths[current-1]);
+        		console.log(widths[current-1]);
 			if(current == fieldsetCount)
 				validateSteps();
 			else
