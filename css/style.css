@@ -479,12 +479,17 @@ z-index:10000;
 }
 
 .produs_wrapper{
- margin-top:20px;
- margin-left:auto;
+ margin-top: 40px;
+ margin-left:170px;
  margin-right: auto;
  width: 70%;
+<<<<<<< HEAD
  height: 90%;
  overflow: auto;
+=======
+ height: 85%;
+ overflow: hidden;
+>>>>>>> topic-fixing-sid
 }
 
 .product_menu{

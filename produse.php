@@ -38,7 +38,7 @@ $(document).ready(function(){
 		var referinta = $(this).attr('id');
 		$('.personal_menu').removeClass('active');
 		if($("div:[referenceto="+referinta+"]").length!=0){
-		 console.log(referinta,$("div:[referenceto="+referinta+"]"));
+		 //console.log(referinta,$("div:[referenceto="+referinta+"]"));
 		$('.personal_menu').addClass('active');
 		$('.personal_menu').children().each(function(){
 			$(this).addClass('inactive');
@@ -50,7 +50,7 @@ $(document).ready(function(){
 		$('.personal_menu').animate({
 			top: $(legatura).position().top
 		},200)
-		console.log($(legatura).position().top);
+		//console.log($(legatura).position().top);
 		$(legatura).addClass('active');
 		}
 	});
