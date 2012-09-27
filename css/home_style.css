@@ -1,0 +1,29 @@
+body {
+    padding: 0px;
+    overflow: hidden;
+}
+.overlay {
+    padding-top: 8%;
+    overflow: hidden;
+    z-index: -1;
+}
+.bgintro {
+    width:99%;
+    z-index: -1;
+    vertical-align: middle
+}
+.siglaintro {
+    position:absolute;
+    z-index: 1;
+    top: 17%;
+    left:10px;
+}
+.navig_flag {
+    overflow: hidden;
+    position: absolute;
+    left: 150px;
+    top: 55%;
+}
+.navig_flag a:hover{
+    font-weight: bold;
+}
