@@ -22,7 +22,6 @@ function parseDirectory($dir,$what){
 
 function search($file,$searchthis){
     $matches = array();
-    echo $searchthis;
     $handle = @fopen($file, "r");
     if ($handle)
     {
