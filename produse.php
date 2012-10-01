@@ -3,7 +3,8 @@
 <title>incaltaminte</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <link rel="stylesheet" type="text/css" href="css/produseform.css" />
-<script src="js/jquery-1.4.2.min.js"></script>
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="js/my_script.js"></script>
 <script>
 $(document).ready(function(){
 	$('.item').hover(function(){

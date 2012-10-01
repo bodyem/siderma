@@ -1,22 +1,31 @@
 <?php
 
-$to_search = $_GET["search"];
-parseDirectory('../',$to_search);
 
-function parseDirectory($dir,$what){
+class searcher {
+
+public $needle;
+public $rezults = array();
+
+function __construct($what){
+    $this->needle = $what;
+}
+
+public function parseDirectory($dir){
     $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir),
                                               RecursiveIteratorIterator::CHILD_FIRST);
+                                              
     foreach ($iterator as $path) {
       if (is_dir($path)) {
           if(basename($path)==='products')
-             parseDirectory($path,$what);
+             searcher::parseDirectory($path);
       } else {
           //echo $path->__toString();
             if (strrpos($path,".html") !== false)
-             search($path->__toString(),$what);
+             array_push($this->rezults, searcher::search($path->__toString(),$this->needle));
        
       }
     }
+  
 
 }
 
@@ -36,6 +45,8 @@ function search($file,$searchthis){
     
     //show results:
     if (sizeof($matches) !== 0)
-    print_r($matches);
+    return $matches;
+}
+
 }
 ?>
