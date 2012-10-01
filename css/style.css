@@ -687,3 +687,42 @@ font-family:Arial;
 
 }
 
+.content_search{
+    border:1px solid;
+    overflow:hidden;
+    text-align: left;
+    padding: 5px;
+    height: 80px;
+    max-height: 80px;
+    -webkit-border-radius: 2px 2px 2px 12px;
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius:15px 15px 15px 15px;
+    box-shadow:rgba(0,0,0,0.7) 2px 2px 2px 2px;
+    behavior: url(css/PIE.htc);
+    margin-bottom:10px;
+    
+}
+.wrapper_pagination{
+    overflow:hidden;
+    margin-bottom:10px;
+}
+.pagination {
+    overflow:hidden;
+    float:right
+}
+.drop_choice {
+    overflow:hidden;
+    float:left;
+    border:1px solid;
+}
+.drop_choice select{
+    height:20px;
+}
+.navig{
+    float:left;
+    line-height:20px;
+    border:1px solid;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+

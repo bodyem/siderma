@@ -77,7 +77,7 @@ $(document).ready(function(){
 });
 
 </script>
-
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
         <script type="text/javascript" src="js/sliding.form.js"></script>
 </head>
 <body>
@@ -104,8 +104,8 @@ $(document).ready(function(){
             <div class="item">
                 <a href="despre_noi.html">Companie</a>
             </div>
-            <div class="item">
-                <a href="produse.php">Produse</a>
+            <div class="item_hover">
+                <a href="#">Produse</a>
             </div>
             <div class="item">
                 <a href="certificari.html">Certificari</a>
@@ -415,19 +415,36 @@ $(document).ready(function(){
                     </div>
                     </div>
                 </div>
-                
-                <?php
-                       require('php_scripts/search.php');
-                        $to_search = $_GET["search"];
-                        $searcher = new searcher($to_search);
-                        $searcher->parseDirectory('./');
-                       for($i = 0 ; $i < sizeof($searcher->rezults); $i++)
-                            echo '<div class="content_search"><a href="'.$searcher->where[$i].'" target="_blank">'.$searcher->where[$i].'</a><br/><p>'.$searcher->rezults[$i][0].'</p></div>';
-                            
-                            ?>
-                
-                
-                
+                <div class="content_search">
+                    <a href="#">whatever</a><br/>
+                    <p>whatever</p><br/>
+                    <p style="color:green">whatever</link>
+                </div>
+                <div class="content_search">
+                    <a href="#">whatever</a><br/>
+                    <p>whatever</p><br/>
+                    <p style="color:green">whatever</link>
+                </div>
+                <div class="content_search">
+                    <a href="#">whatever</a><br/>
+                    <p>whatever</p><br/>
+                    <p style="color:green">whatever</link>
+                </div>
+                <div class="content_search">
+                    <a href="#">whatever</a><br/>
+                    <p>whatever</p><br/>
+                    <p style="color:green">whatever</link>
+                </div>
+                <div class="content_search">
+                    <a href="#">whatever</a><br/>
+                    <p>whatever</p><br/>
+                    <p style="color:green">whatever</link>
+                </div>
+                <div class="content_search">
+                    <a href="#">whatever</a><br/>
+                    <p>whatever</p><br/>
+                    <p style="color:green">whatever</link>
+                </div>
             </div>
         </div>
     
@@ -468,4 +485,3 @@ $(document).ready(function(){
 
 
 </body>
-

@@ -31,14 +31,14 @@ $(document).ready(function(){
 		$(this).addClass('selected');
 		
 		//cut the relationship
-		$("div:[reference]").each(function(){
+		$("div[reference]").each(function(){
 			$(this).removeClass('active');
 		});
 		
 		//show the menu
 		var referinta = $(this).attr('id');
 		$('.personal_menu').removeClass('active');
-		if($("div:[referenceto="+referinta+"]").length!=0){
+		if($("div[referenceto="+referinta+"]").length!=0){
 		 //console.log(referinta,$("div:[referenceto="+referinta+"]"));
 		$('.personal_menu').addClass('active');
 		$('.personal_menu').children().each(function(){
@@ -47,7 +47,7 @@ $(document).ready(function(){
 				$(this).removeClass('inactive');
 		})
 		
-		var legatura = $("div:[reference="+referinta+"]");
+		var legatura = $("div[reference="+referinta+"]");
 		$('.personal_menu').animate({
 			top: $(legatura).position().top
 		},200)
@@ -77,7 +77,7 @@ $(document).ready(function(){
 });
 
 </script>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	
         <script type="text/javascript" src="js/sliding.form.js"></script>
 </head>
 <body>

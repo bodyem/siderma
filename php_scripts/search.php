@@ -5,6 +5,7 @@ class searcher {
 
 public $needle;
 public $rezults = array();
+public $where = array();
 
 function __construct($what){
     $this->needle = $what;
@@ -20,8 +21,12 @@ public function parseDirectory($dir){
              searcher::parseDirectory($path);
       } else {
           //echo $path->__toString();
-            if (strrpos($path,".html") !== false)
-             array_push($this->rezults, searcher::search($path->__toString(),$this->needle));
+            if (strrpos($path,".html") !== false){
+                $my_result =    searcher::search($path->__toString(),$this->needle);
+                if(sizeof($my_result)!==0)
+                 array_push($this->rezults, $my_result);
+            }
+            
        
       }
     }
@@ -44,9 +49,13 @@ function search($file,$searchthis){
     }
     
     //show results:
-    if (sizeof($matches) !== 0)
-    return $matches;
+    if (sizeof($matches) !== 0){
+        array_push($this->where,$file);
+        return $matches;
+    }
 }
 
 }
+
+
 ?>
